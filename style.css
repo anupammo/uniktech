@@ -97,7 +97,7 @@ body {
       }
    
   .col-half-offset{
-        margin-left:4.166666667%
+        margin-left:3.166666667%
     }
   .item{
     padding-left:0px;
@@ -193,20 +193,17 @@ body {
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-/* .footer-col .social-links a:hover{  
-	color: #24262b;
-	background-color: #ffffff;
-} */
-.footer-col .caption .social-links .facebook:hover{
+
+.footer-col .social-links .facebook:hover{
   background: #4e76ca;
 }
-.footer-col .caption .social-links .twitter:hover{
+.footer-col  .social-links .twitter:hover{
   background: #49b2df;
 }
-.footer-col .caption .social-links .instagram:hover{
+.footer-col  .social-links .instagram:hover{
   background: #e1306c;
 }
-.footer-col .caption .social-links .linkdn:hover{
+.footer-col  .social-links .linkdn:hover{
   background: #0077b5;
 }
 
@@ -229,7 +226,7 @@ body {
 .section_all {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 .section_title_all{
   padding-top: 25%;
@@ -238,13 +235,7 @@ body {
 .text_custom {
   color: #00bd2a;
 }
-.bg-image{
-  width: 100%;
-  background-image: url('backgroundjpg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 .main{
   padding-top: 51px;
  }
@@ -259,7 +250,7 @@ body {
    border-radius: 50%;
    box-shadow: 0 0 22px #3336;
    transition: .6s;
-   margin: 0 25px;
+   margin: auto;
    align-items: center;
 
  }
@@ -278,6 +269,7 @@ body {
    transform: translateY(-60px);
  }
  .img img{
+  background-color: white;
    width: 100%;
    border-radius: 50%;
    box-shadow: 0 0 22px #3336;
@@ -306,11 +298,28 @@ body {
    margin: 2px 0 9px 0;
  }
  .caption .social-links a{
-   color: #333;
+  background-color: rgba(255,255,255,0.2);
+   color: #727272;
    margin-right: 15px;
    font-size: 21px;
    transition: .6s;
  }
+ .caption .social-links .fa-facebook:hover{
+  background: #4e76ca;
+  color: #ffffff;
+}
+.caption  .social-links .fa-twitter:hover{
+  background: #49b2df;
+  color: #ffffff;
+}
+.caption  .social-links .fa-instagram:hover{
+  background: #e1306c;
+  color: #ffffff;
+}
+.caption  .social-links .fa-linkdn:hover{
+  background: #0077b5;
+  color: #ffffff;
+}
  /* meadia queries start */
  /* desktop */
 
@@ -337,7 +346,10 @@ body {
           } 
           .profile-card{
             margin: auto;
-          }      
+          } 
+          .section_title_all{
+            padding-top: 10%;
+          }     
       
  }
  @media(max-width: 574px){
